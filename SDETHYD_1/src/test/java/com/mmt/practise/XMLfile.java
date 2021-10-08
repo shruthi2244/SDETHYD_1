@@ -13,7 +13,7 @@ public class XMLfile {
   SAXReader reader=new SAXReader();
   
   
-  Document doc=doc.selectSingleNode();
+  Document doc=doc.selectSingleNode("./CommonData.xml");
 		  System.out.println(value);
 }
 

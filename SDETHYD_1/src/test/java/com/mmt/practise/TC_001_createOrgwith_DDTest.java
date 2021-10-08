@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class createOrgwith_DDTest {
+public class TC_001_createOrgwith_DDTest {
 
 	@Test
 	public void createorgwithDD() throws Throwable {
