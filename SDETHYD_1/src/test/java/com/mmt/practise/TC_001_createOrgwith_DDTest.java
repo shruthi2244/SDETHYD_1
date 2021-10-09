@@ -70,13 +70,14 @@ public class TC_001_createOrgwith_DDTest {
 		driver.findElement(By.xpath("(//a[text()='Organizations'])[1]")).click();
 		
 		driver.findElement(By.name("search_text")).sendKeys(orgname);
+		WebElement searchdropdown=driver.findElement(By.id("bas_searchfield"));
+	Select searchdd=new Select(searchdropdown);
+	searchdd.selectByIndex(1);
+	driver.findElement(By.name("submit")).click();
+	WebElement OrgName=driver.findElement(By.xpath("//a[@title=\"Organizations\" and text()='QSPHYD_5103']"));
+	    if(OrgName.isDisplayed()) {
+	Assert.assertTrue(true);
 
-	//Select indd=new Select(indropdown);
-	//indd.selectByValue("indd");
-//	WebElement OrganizationName=driver.findElement(By.xpath("//a[@title='Organizations']"));
-//	driver.findElement(By.name("submit")).click();
-//    if(OrganizationName.isDisplayed()) {
-//Assert.assertTrue(true);
-//	}
+}
 }
 }

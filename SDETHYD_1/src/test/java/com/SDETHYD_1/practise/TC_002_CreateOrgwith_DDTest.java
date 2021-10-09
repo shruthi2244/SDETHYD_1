@@ -78,9 +78,6 @@ public class TC_002_CreateOrgwith_DDTest {
 		Select indd=new Select(searchdropdown);
 	indd.selectByIndex(1);
 	driver.findElement(By.name("submit")).click();
-	WebElement OrgName=driver.findElement(By.xpath("//a[@title=\"Organizations\" and text()='shruthi']"));
-	    if(OrgName.isDisplayed()) {
-	Assert.assertTrue(true);
-}
+	
 }
 }

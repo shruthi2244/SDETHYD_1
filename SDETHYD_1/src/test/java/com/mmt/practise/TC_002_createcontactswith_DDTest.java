@@ -57,12 +57,12 @@ public class TC_002_createcontactswith_DDTest {
 			Select indd=new Select(indropdown);
 			indd.selectByVisibleText("First Name");
 			driver.findElement(By.name("submit")).click();
-			//WebElement firstname=driver.findElement(By.)
-		//	if(FirstName.isDisplayed()) {
-				Assert.assertTrue(true);
-					}
+			WebElement OrgName=driver.findElement(By.xpath("//a[@title=\"Contacts\" and text()='sh']"));
+		    if(OrgName.isDisplayed()) {
+		Assert.assertTrue(true);
 
-			//)
+	}
+	}
 
 }
 
