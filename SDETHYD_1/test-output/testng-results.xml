@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27888" started-at="2021-10-09T13:08:12 IST" finished-at="2021-10-09T13:08:39 IST">
+  <suite name="Default suite" duration-ms="16730" started-at="2021-10-11T10:37:21 IST" finished-at="2021-10-11T10:37:38 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27888" started-at="2021-10-09T13:08:12 IST" finished-at="2021-10-09T13:08:39 IST">
-      <class name="com.mmt.practise.TC_002_createcontactswith_DDTest">
-        <test-method status="PASS" signature="createOrgwith_DDTest()[pri:0, instance:com.mmt.practise.TC_002_createcontactswith_DDTest@43a0cee9]" name="createOrgwith_DDTest" duration-ms="27860" started-at="2021-10-09T13:08:12 IST" finished-at="2021-10-09T13:08:39 IST">
+    <test name="Default test" duration-ms="16730" started-at="2021-10-11T10:37:21 IST" finished-at="2021-10-11T10:37:38 IST">
+      <class name="com.SDETHYD_1.practise.TC_005_CreateOrgwith_DDTest">
+        <test-method status="PASS" signature="createorgwithDD()[pri:0, instance:com.SDETHYD_1.practise.TC_005_CreateOrgwith_DDTest@43a0cee9]" name="createorgwithDD" duration-ms="16698" started-at="2021-10-11T10:37:21 IST" finished-at="2021-10-11T10:37:38 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createOrgwith_DDTest -->
-      </class> <!-- com.mmt.practise.TC_002_createcontactswith_DDTest -->
+        </test-method> <!-- createorgwithDD -->
+      </class> <!-- com.SDETHYD_1.practise.TC_005_CreateOrgwith_DDTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
