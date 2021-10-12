@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SDETHYD_1.practise.TC_003_CreateOrgwith_DDTest">
+      <class name="com.SDETHYD_1.practise.TC_005_CreateOrgwith_DDTest">
         <methods>
           <include name="createorgwithDD"/>
         </methods>
-      </class> <!-- com.SDETHYD_1.practise.TC_003_CreateOrgwith_DDTest -->
+      </class> <!-- com.SDETHYD_1.practise.TC_005_CreateOrgwith_DDTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

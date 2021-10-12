@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16730" started-at="2021-10-11T10:37:21 IST" finished-at="2021-10-11T10:37:38 IST">
+  <suite name="Default suite" duration-ms="9285" started-at="2021-10-12T12:21:33 IST" finished-at="2021-10-12T12:21:42 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16730" started-at="2021-10-11T10:37:21 IST" finished-at="2021-10-11T10:37:38 IST">
-      <class name="com.SDETHYD_1.practise.TC_005_CreateOrgwith_DDTest">
-        <test-method status="PASS" signature="createorgwithDD()[pri:0, instance:com.SDETHYD_1.practise.TC_005_CreateOrgwith_DDTest@43a0cee9]" name="createorgwithDD" duration-ms="16698" started-at="2021-10-11T10:37:21 IST" finished-at="2021-10-11T10:37:38 IST">
+    <test name="Default test" duration-ms="9285" started-at="2021-10-12T12:21:33 IST" finished-at="2021-10-12T12:21:42 IST">
+      <class name="com.SDETHYD_1.practise.TC_008_MouseHoverTest">
+        <test-method status="PASS" signature="createorgwithDD()[pri:0, instance:com.SDETHYD_1.practise.TC_008_MouseHoverTest@43a0cee9]" name="createorgwithDD" duration-ms="9251" started-at="2021-10-12T12:21:33 IST" finished-at="2021-10-12T12:21:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createorgwithDD -->
-      </class> <!-- com.SDETHYD_1.practise.TC_005_CreateOrgwith_DDTest -->
+      </class> <!-- com.SDETHYD_1.practise.TC_008_MouseHoverTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
