@@ -11,9 +11,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class WebDriverUtility {
+public class WebUtility {
 	/**
-	 * @author PAVAN
+	 * @author Shruthi
 	 * Description This method is going to work as implicit wait
 	 * @param driver
 	 */

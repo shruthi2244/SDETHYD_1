@@ -12,6 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import com.vtiger.generic.FileUtility;
+import com.vtiger.generic.WebUtility;
+
 public class TC_003_createcontactswindowtest {
 	@Test
 	public void createOrgwith_DDTest() throws Throwable {
@@ -19,12 +22,13 @@ public class TC_003_createcontactswindowtest {
 			FileInputStream fis=new FileInputStream("./common.properties");
 			Properties prop=new Properties();
 			prop.load(fis);
+			FileUtility  fu= new FileUtility();
 			if
-			(prop.getProperty("browser").equalsIgnoreCase("chrome"))
+			(fu.readDatafromPropfile("browser").equalsIgnoreCase("chrome"))
 			{
 				driver=new ChromeDriver();
 			}
-			else if(prop.getProperty("browser").equalsIgnoreCase("firefox"))
+			else if(fu.readDatafromPropfile("browser").equalsIgnoreCase("firefox"))
 			{
 			driver=new FirefoxDriver();
 			}
@@ -33,12 +37,12 @@ public class TC_003_createcontactswindowtest {
 			}
 			//driver.get("http://localhost:8888/");
 			
-			driver.get(prop.getProperty("url"));
+			driver.get(fu.readDatafromPropfile("url"));
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
-			driver.findElement(By.name("user_name")).sendKeys(prop.getProperty("username"));
-			driver.findElement(By.name("user_password")).sendKeys(prop.getProperty("password"));
+			driver.findElement(By.name("user_name")).sendKeys(fu.readDatafromPropfile("username"));
+			driver.findElement(By.name("user_password")).sendKeys(fu.readDatafromPropfile("password"));
 		
 			driver.findElement(By.xpath("//input[@id=\"submitButton\"]")).click();
 			driver.findElement(By.xpath("//a[text()='Contacts']")).click();
@@ -46,6 +50,8 @@ public class TC_003_createcontactswindowtest {
 			driver.findElement(By.name("firstname")).sendKeys("shru");
 			driver.findElement(By.name("lastname")).sendKeys("badal");
 			driver.findElement(By.xpath("(//img[@alt=\"Select\"])[1]")).click();
+//			WebUtility wu=new WebUtility();
+//			wu.
 			Set<String> windows=driver.getWindowHandles();
 			Iterator<String> window=windows.iterator();
 			String parentwindow=window.next();
