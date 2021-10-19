@@ -13,7 +13,7 @@ public class FileUtility {
 	 */
 	public String readDatafromPropfile(String key) throws IOException 
 	{
-		FileInputStream fis = new FileInputStream("./commondata.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\Shruthi Badala\\git\\SDETHYD_1\\SDETHYD_1\\common.properties");
 
 		Properties prop = new Properties();
 		prop.load(fis);

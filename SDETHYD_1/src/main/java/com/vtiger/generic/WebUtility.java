@@ -157,6 +157,21 @@ public class WebUtility {
 				break;
 			}
 		}
-	}
+		public void switchtowindow(WebDriver driver,String TargetTitle, WebElement element)
+		{
+			String MainWindow = driver.getWindowHandle();
+			Set<String> Allwindows = driver.getWindowHandles();
+			for(String currentWindow:Allwindows)
+			{
+				String Title = driver.switchTo().window(currentWindow).getTitle();
+				if (Title.equalsIgnoreCase(TargetTitle)) {
+					
+					element.click();
+				}
+				
+			}
+			driver.switchTo().window(MainWindow);
+		}
+	
 
 }
