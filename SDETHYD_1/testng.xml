@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.mmt.practise.createOrgwith_DDTest"/>
+      <class name="com.mmt.practise.TC_001_createOrgwith_DDTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

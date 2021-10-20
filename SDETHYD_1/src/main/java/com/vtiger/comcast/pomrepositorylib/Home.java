@@ -46,10 +46,16 @@ public WebElement getSignOutLnk() {
 public void setSignOutLnk(WebElement signOutLnk) {
 	this.signOutLnk = signOutLnk;
 }  
-   public void logout() {
-	   Actions ac=new Actions(driver);
+  
+   public void org() {
+	   organizationLnk.click();
+	
+}
+public void logout() {
+	Actions ac=new Actions(driver);
 	   ac.moveToElement(administratorImg).perform();
 	   signOutLnk.click();
-   }
+	
+}
 }
 

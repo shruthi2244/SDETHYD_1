@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SDETHYD_1.practise.TC_002_createcontactswith_DDTest">
+      <class name="com.mmt.practise.TC_003_createcontactswindowtest">
         <methods>
+          <include name="closeconnection"/>
+          <include name="login"/>
+          <include name="launchbrowser"/>
+          <include name="startconnection"/>
           <include name="createOrgwith_DDTest"/>
         </methods>
-      </class> <!-- com.SDETHYD_1.practise.TC_002_createcontactswith_DDTest -->
+      </class> <!-- com.mmt.practise.TC_003_createcontactswindowtest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

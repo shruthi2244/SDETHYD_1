@@ -68,7 +68,7 @@ public class WebUtility {
 	 * @param int
 	 */
 
-	public void selectelementfromDropdown(WebElement element,int index)
+	public void selectElementfromDropdown(WebElement element,int index)
 	{
 		Select select = new Select(element);
 		select.selectByIndex(index);
@@ -157,6 +157,7 @@ public class WebUtility {
 				break;
 			}
 		}
+		}
 		public void switchtowindow(WebDriver driver,String TargetTitle, WebElement element)
 		{
 			String MainWindow = driver.getWindowHandle();
@@ -173,5 +174,5 @@ public class WebUtility {
 			driver.switchTo().window(MainWindow);
 		}
 	
-
 }
+
