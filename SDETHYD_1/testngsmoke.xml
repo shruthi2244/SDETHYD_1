@@ -1,0 +1,17 @@
+
+
+
+<suite name="Suite">
+  <groups>
+  <run>
+  <include name="smoke" />
+  <include name="regression" >
+  </include>
+  </run>
+  </groups>
+   <test  name="Test">
+    <classes>
+      <class name="com.mmt.practise.TC_000gruops_test"/>
+    </classes>
+  </test> 
+</suite> 
