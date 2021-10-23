@@ -16,7 +16,7 @@ public class CreateOrgTest {
 		WebUtility wu=new WebUtility();
 		WebDriver driver=null;
 		//read data from common property
-		String browser=flib.
+		//String browser=flib.
 	}
 
 }

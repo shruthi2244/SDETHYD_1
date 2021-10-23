@@ -17,5 +17,8 @@ public class Organizations {
 	public void setCreateorgimg(WebElement createorgimg) {
 		this.createorgimg = createorgimg;
 	}
+	public void orgimg() {
+		createorgimg.click();
+	}
 
 }
