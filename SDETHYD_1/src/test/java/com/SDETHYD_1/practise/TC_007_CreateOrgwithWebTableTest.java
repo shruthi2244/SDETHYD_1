@@ -17,13 +17,13 @@ public class TC_007_CreateOrgwithWebTableTest {
 //		Random random=new Random();
 //		int randomnumber=random.nextInt(1000);
 //		System.out.println(randomnumber);
-		
+		WebDriver driver;
 		Random random=new Random();
 		int randomnumber=random.nextInt(1000);
 		System.out.println(randomnumber);
 		String orgname="shruth"+randomnumber;
 		System.out.println(orgname);
-		WebDriver driver=new ChromeDriver();
+		//WebDriver driver=new ChromeDriver();
 		FileInputStream fis=new FileInputStream("./common.properties");
 		Properties prop=new Properties();
 		prop.load(fis);

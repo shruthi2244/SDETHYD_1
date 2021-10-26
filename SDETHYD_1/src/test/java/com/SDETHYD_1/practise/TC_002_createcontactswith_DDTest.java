@@ -19,7 +19,7 @@ import com.vtiger.generic.WebUtility;
 public class TC_002_createcontactswith_DDTest {
 	@Test
 	public void createOrgwith_DDTest() throws Throwable {
-			WebDriver driver=new ChromeDriver();
+			WebDriver driver;
 //			FileInputStream fis=new FileInputStream("C:\\Users\\Shruthi Badala\\git\\SDETHYD_1\\SDETHYD_1\\common.properties");
 //			Properties prop=new Properties();
 //			prop.load(fis);

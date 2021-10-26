@@ -13,19 +13,41 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 public class TC_003_CreateOrgwith_DDTest {
 	@Test
 	public void createorgwithDD() throws Throwable {
 //		Random random=new Random();
 //		int randomnumber=random.nextInt(1000);
 //		System.out.println(randomnumber);
-		
+		WebDriver driver;
+		 ExtentHtmlReporter extentreport=new ExtentHtmlReporter("./src/test/resources/REports.html");
+		  
+		  extentreport.config().setDocumentTitle("SHRUTHI");
+		  extentreport.config().setReportName("VTIGER");
+		  extentreport.config().setTheme(Theme.DARK);
+		  
+		  ExtentReports reports=new ExtentReports();
+		  reports.attachReporter(extentreport);
+		  
+		  reports.setSystemInfo("APPURL", "http://localhost:8888/");
+		  reports.setSystemInfo("ENV","Test QA");
+		  reports.setSystemInfo("Build", "4.1");
+		  reports.setSystemInfo("Reporter name", "shruthi");
+		  
+		  ExtentTest test=reports.createTest("TC_003_CreateOrgwith_DDTest");
+		  test.log(Status.PASS, "craeate org test");
 		Random random=new Random();
 		int randomnumber=random.nextInt(1000);
 		System.out.println(randomnumber);
 		String orgname="QSPHYD_5"+randomnumber;
 		System.out.println(orgname);
-		WebDriver driver=new ChromeDriver();
+		//WebDriver driver=new ChromeDriver();
 		FileInputStream fis=new FileInputStream("./common.properties");
 		Properties prop=new Properties();
 		prop.load(fis);
@@ -68,6 +90,7 @@ public class TC_003_CreateOrgwith_DDTest {
 	    driver.findElement(By.id("jscal_field_date_start")).sendKeys("2021-10-03");
 	    driver.findElement(By.id("jscal_field_date_end")).sendKeys("2021-10-06");
 	    driver.findElement(By.name("button2")).click();
+	    reports.flush();
 }
 }
 

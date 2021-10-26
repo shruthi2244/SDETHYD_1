@@ -11,19 +11,41 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 public class TC_004_CreateOrgwithDDTest {
-	@Test
 	public void createorgwithDD() throws Throwable {
 //		Random random=new Random();
 //		int randomnumber=random.nextInt(1000);
 //		System.out.println(randomnumber);
+		WebDriver driver;
+	  ExtentHtmlReporter extentreport=new ExtentHtmlReporter("./src/test/resources/REports.html");
+	  
+	  extentreport.config().setDocumentTitle("SHRUTHI");
+	  extentreport.config().setReportName("VTIGER");
+	  extentreport.config().setTheme(Theme.DARK);
+	  
+	  ExtentReports reports=new ExtentReports();
+	  reports.attachReporter(extentreport);
+	  
+	  reports.setSystemInfo("APPURL", "http://localhost:8888/");
+	  reports.setSystemInfo("ENV","Test QA");
+	  reports.setSystemInfo("Build", "4.1");
+	  reports.setSystemInfo("Reporter name", "shruthi");
+	  
+	  ExtentTest test=reports.createTest("TC_004_CreateOrgwithDDTest ");
+	  test.log(Status.PASS, "craeate org test");
 		
 		Random random=new Random();
 		int randomnumber=random.nextInt(1000);
 		System.out.println(randomnumber);
 		String orgname="QSPHYD_5"+randomnumber;
 		System.out.println(orgname);
-		WebDriver driver=new ChromeDriver();
+		
 		FileInputStream fis=new FileInputStream("./common.properties");
 		Properties prop=new Properties();
 		prop.load(fis);
@@ -52,5 +74,6 @@ public class TC_004_CreateOrgwithDDTest {
 		driver.findElement(By.xpath("//img[@title=\"Create Organization...\"]")).click();
 		driver.findElement(By.xpath("//img[@title=\"Organizations Settings\"]")).click();
 		//driver.findElement(By.xpath("")).click();
+		reports.flush();
 	}
 }
