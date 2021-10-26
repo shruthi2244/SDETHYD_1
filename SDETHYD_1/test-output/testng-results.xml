@@ -11,7 +11,7 @@
       <![CDATA[close the connection with database]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44631" started-at="2021-10-26T13:44:56 IST" finished-at="2021-10-26T13:45:41 IST">
+  <suite name="Default suite" duration-ms="44903" started-at="2021-10-26T13:49:24 IST" finished-at="2021-10-26T13:50:09 IST">
     <groups>
       <group name="regression">
         <method signature="TC_000gruops_test.createorgwithDD()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="createorgwithDD" class="com.mmt.practise.TC_000gruops_test"/>
@@ -20,47 +20,47 @@
         <method signature="TC_000gruops_test.createOrgwith_DDTest()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="createOrgwith_DDTest" class="com.mmt.practise.TC_000gruops_test"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="44631" started-at="2021-10-26T13:44:56 IST" finished-at="2021-10-26T13:45:41 IST">
+    <test name="Default test" duration-ms="44903" started-at="2021-10-26T13:49:24 IST" finished-at="2021-10-26T13:50:09 IST">
       <class name="com.mmt.practise.TC_000gruops_test">
-        <test-method status="PASS" signature="startconnection()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="startconnection" is-config="true" duration-ms="5" started-at="2021-10-26T13:44:56 IST" finished-at="2021-10-26T13:44:56 IST">
+        <test-method status="PASS" signature="startconnection()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="startconnection" is-config="true" duration-ms="5" started-at="2021-10-26T13:49:24 IST" finished-at="2021-10-26T13:49:24 IST">
           <reporter-output>
             <line>
               <![CDATA[Start the connection with DataBase]]>
             </line>
           </reporter-output>
         </test-method> <!-- startconnection -->
-        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="launchbrowser" is-config="true" duration-ms="5047" started-at="2021-10-26T13:44:56 IST" finished-at="2021-10-26T13:45:01 IST">
+        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="launchbrowser" is-config="true" duration-ms="5002" started-at="2021-10-26T13:49:24 IST" finished-at="2021-10-26T13:49:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="login" is-config="true" duration-ms="2596" started-at="2021-10-26T13:45:01 IST" finished-at="2021-10-26T13:45:04 IST">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="login" is-config="true" duration-ms="2788" started-at="2021-10-26T13:49:29 IST" finished-at="2021-10-26T13:49:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createOrgwith_DDTest()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="createOrgwith_DDTest" duration-ms="14013" started-at="2021-10-26T13:45:04 IST" finished-at="2021-10-26T13:45:18 IST">
+        <test-method status="PASS" signature="createOrgwith_DDTest()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="createOrgwith_DDTest" duration-ms="14010" started-at="2021-10-26T13:49:32 IST" finished-at="2021-10-26T13:49:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrgwith_DDTest -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="logout" is-config="true" duration-ms="4693" started-at="2021-10-26T13:45:18 IST" finished-at="2021-10-26T13:45:23 IST">
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="logout" is-config="true" duration-ms="4818" started-at="2021-10-26T13:49:46 IST" finished-at="2021-10-26T13:49:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="login" is-config="true" duration-ms="2347" started-at="2021-10-26T13:45:23 IST" finished-at="2021-10-26T13:45:25 IST">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="login" is-config="true" duration-ms="2520" started-at="2021-10-26T13:49:51 IST" finished-at="2021-10-26T13:49:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createorgwithDD()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="createorgwithDD" duration-ms="11225" started-at="2021-10-26T13:45:25 IST" finished-at="2021-10-26T13:45:36 IST">
+        <test-method status="PASS" signature="createorgwithDD()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="createorgwithDD" duration-ms="11216" started-at="2021-10-26T13:49:53 IST" finished-at="2021-10-26T13:50:04 IST">
           <reporter-output>
             <line>
               <![CDATA[created contacts]]>
             </line>
           </reporter-output>
         </test-method> <!-- createorgwithDD -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="logout" is-config="true" duration-ms="4673" started-at="2021-10-26T13:45:36 IST" finished-at="2021-10-26T13:45:41 IST">
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="logout" is-config="true" duration-ms="4506" started-at="2021-10-26T13:50:04 IST" finished-at="2021-10-26T13:50:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="closeconnection()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="closeconnection" is-config="true" duration-ms="0" started-at="2021-10-26T13:45:41 IST" finished-at="2021-10-26T13:45:41 IST">
+        <test-method status="PASS" signature="closeconnection()[pri:0, instance:com.mmt.practise.TC_000gruops_test@4cf4d528]" name="closeconnection" is-config="true" duration-ms="0" started-at="2021-10-26T13:50:09 IST" finished-at="2021-10-26T13:50:09 IST">
           <reporter-output>
             <line>
               <![CDATA[close the connection with database]]>
