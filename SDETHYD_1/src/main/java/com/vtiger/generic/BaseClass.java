@@ -1,6 +1,7 @@
 package com.vtiger.generic;
 
 
+import org.junit.AfterClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,6 +17,7 @@ import com.vtiger.comcast.pomrepositorylib.Home;
 import com.vtiger.comcast.pomrepositorylib.Login;
 
 
+
 public class BaseClass {
 	public static WebDriver driver;
 	FileUtility  fu= new FileUtility();
@@ -26,7 +28,7 @@ public class BaseClass {
 	{
 		Reporter.log("Start the connection with DataBase");
 	}
-    // @Parameters("browser")
+	// @Parameters("browser")
 	@BeforeClass(groups={"smoke" , "regression"})
 	public void launchbrowser() throws Throwable {
 		String browsername=fu.readDatafromPropfile("browser");
@@ -42,8 +44,8 @@ public class BaseClass {
 		else {
 			driver=new ChromeDriver();
 		}
-//	     sdriver = driver;
-		driver.get(fu.readDatafromPropfile("url"));
+		//	     sdriver = driver;
+		driver.get("http://localhost:8888/");
 		driver.manage().window().maximize();
 	}
 	@BeforeMethod(groups={"smoke" , "regression"})
@@ -53,15 +55,16 @@ public class BaseClass {
 
 	}
 	@AfterMethod(groups={"smoke" , "regression"})
-	public void logout() {
+	public void logout() throws InterruptedException  {
 		Home hp=new Home(driver);
+		Thread.sleep(3000);
 		hp.logout();
 	}
-	@AfterMethod(groups={"smoke" , "regression"})
+	@AfterClass()
 	public void closebrowser() {
 		driver.close();
 	}
-	
+
 
 	@AfterSuite(groups={"smoke" , "regression"})
 	public void closeconnection() {

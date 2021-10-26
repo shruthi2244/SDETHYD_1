@@ -15,11 +15,11 @@ public class LenskartTest {
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	List<WebElement> allLinks=driver.findElements(By.name("//input[@name=\"q\"]"));
-	int noOfLinks=allLinks.size();
-	System.out.println("No of links: "+ "number of links");
+	//int noOfLinks=allLinks.size();
+	//System.out.println("No of links: "+ "number of links");
 	for(int i=0;i<=allLinks.size()-1;i++) {
-		WebElement oneAddress=allLinks.get(i);
-		String text=oneAddress.getText();
+		//WebElement oneAddress=allLinks.get(i);
+		String text=allLinks.get(i).getText();
 		System.out.println(text);
 	}
 
