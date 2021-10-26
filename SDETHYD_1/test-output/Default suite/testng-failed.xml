@@ -3,17 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mmt.practise.TC_000gruops_test">
+      <class name="com.mmt.practise.SampleTest">
         <methods>
-          <include name="createorgwithDD"/>
-          <include name="closebrowser"/>
-          <include name="logout"/>
-          <include name="closeconnection"/>
-          <include name="login"/>
-          <include name="launchbrowser"/>
-          <include name="startconnection"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- com.mmt.practise.TC_000gruops_test -->
+      </class> <!-- com.mmt.practise.SampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
