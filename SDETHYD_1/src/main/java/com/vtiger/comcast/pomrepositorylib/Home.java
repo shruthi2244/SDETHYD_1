@@ -6,6 +6,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.vtiger.generic.BaseClass;
+
 public class Home {
 	WebDriver driver;
 	public Home(WebDriver driver) {
@@ -52,8 +54,8 @@ public void setSignOutLnk(WebElement signOutLnk) {
 	
 }
 public void logout() {
-	Actions ac=new Actions(driver);
-	   ac.moveToElement(administratorImg).perform();
+	Actions ac=new Actions(BaseClass.driver);
+	   ac.moveToElement(administratorImg).build().perform();
 	   signOutLnk.click();
 	
 }

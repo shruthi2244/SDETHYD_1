@@ -36,5 +36,4 @@ public class MMTTest {
 		driver.findElement(By.xpath("//div[@aria-label=\"+todaysdate+\"]")).click();
 		
 	}
-
 }
